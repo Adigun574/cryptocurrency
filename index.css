@@ -1,0 +1,102 @@
+@media (min-width:200px) and (max-width:500px){
+  .graph{width:250px}
+  #wrapper-input{width:80%}
+  #wrapper-btn{width:20%}
+  .images{margin-left: 50px}
+}
+@media (max-width:600px){
+  .head-logo{display:none}
+  .head-login{padding-lef:170px}
+  .head-search{widt:70vw}
+  .graph{width:100px}
+  .panel2{display:none}
+  #wrapper-input{width:70%}
+  #wrapper-btn{width:30%}
+  /*.priceusd-head{float:left;width:10px}*/
+}
+@media (min-width:600px) and (max-width:768px){
+  .head-logo{display:none}
+  /*img{width:100px}*/
+  .panel2{display:none}
+  
+}
+@media (min-width:768) and (max-width:992px){
+  
+}
+@media (min-width:992px) and (max-width:1200px){
+  
+}
+
+.head-search{padding:23px;widt:50vw}
+.head-login{padding-righ:10px;margin-top:21px;}
+.head{background-color:#222;height:60px;padding-top:0}
+small{color:white}
+.logo-white{color:white}
+/*img{width:100px}*/
+.sliding{background-colo:red}
+h11{text-align: center}
+.panel-heading{height:40px;text-align:righ;}
+.panel-body{padding-top:0;background-color: rgb(215, 221, 233)}
+.pricebtc-head{text-align:center;border-bottom:3px solid white;padding-bottom:5px}
+.priceusd-head{text-align:center;border-bottom:3px solid white;padding-bottom:5px}
+.marketcap{text-align:center}
+panel-price{clear:float}
+amountusd{float:left}
+.panel{box-shadow:3px 3px 20px black}
+.panel-button{float:right;border:1px solid steelblue;background-color:white;color:steelblue;border-radius:5px}
+/*img{width:220px;height:90px;position:absolute;top:50px;right:30px}*/
+panel-body{height:100px}
+.panel-footer{height:40px}
+.panel-button:hover{background-color:steelblue;color:white}
+.carousel-indicators li{box-shadow:inset 5px 5px 5px 5px grey}
+.carousel-indicators .active{box-shadow:inset 5px 5px 5px 5px steelblue}
+tr:nth-child(odd){background-color:rgb(2, 65, 2)}
+tr:nth-child(even){background-color: #ccc}
+.footer{background-color:black;color:white;margin-top:20px}
+.footer-head{color:rgb(41, 219, 41)}
+.bitcoin-logo{color:rgb(41,219,41)}
+.footnote{text-align:center}
+.social-media{text-align:center}
+.fa{padding-right:20px;}
+.fa:hover{text-decoration: none;color:#ccc}
+.search:hover{background-color:#555;color:white}
+.search{border:none;height:22px}
+.head-login{color:white}
+thead{color:white}
+tr:hover{font-weight:bold}
+.logo{color:rgb(100, 223, 100)}
+.search-box{border:none}
+#bck{width:100vw;height:200vh;z-index:-1;opacity: 0.5}
+.login-panel{width: 20px;}
+.navbar{background-color:green}
+#nav1{float:left}
+#nav2{float:left}
+#nav3{float:left}
+#nav4{float:left}
+.ulnav{width:100%}
+.login-page{background-color: steelblue;margin-top:0;width:200px;justify-content: center}
+.login-head2{background-color: blue;margin-bottom:0}
+.login-logo{color:steelblue;background-color: white;padding:20px;border-radius:50%;width:50px}
+.page2{text-align:center}
+.key{color:grey}
+.value{background-color: #ddd;padding:5px;font-weight:bold}
+#line{color:black}
+.navigation{background-color:#233;}
+#small{padding-left:50px}
+#searchbox{margin-top:0;width:100%;border-left:30px solid #233;border-bottom:5px solid #233;border-right:30px solid #233;border-top:5px solid #233;text-align:center}
+.navbar{margin-bottom:0;}
+#wrapper-input,#wrapper-btn{float:left}
+#wrapper-input{width:70%;margin-top:0;border-left:30px solid #233;border-bottom:5px solid #233;border-right:30px solid #233;border-top:5px solid #233;text-align:center}
+#wrapper-btn{width:30%;height:32px;border-right:25px solid #233;border-top:5px solid #233;border-bottom:5px solid #233;border-left:5px solid #233}
+.bottom-note{color:#555;margin-bottom: 10px}
+.li1{margin-right:50p}
+.body-nav{background-color: #ddd;}
+.li1:hover,.li2:hover,.li3:hover{border-top: 2px solid green}
+input:focus{outline:none}
+button:focus{outline:none}
+news-body{background-color:rgb(240, 222, 222);margin-bottom:20px;padding-top:5px;box-shadow: 2px 2px 15px black}
+#img1,#img2,#img3,#img4{width:250px;box-shadow:5px 5px 25px black}
+.images{margin-lef: 500px}
+#img1,#img2{height:100px}
+#img1{margin-bottom: 10px}
+
