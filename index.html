@@ -1,0 +1,461 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--font awesome-->
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel = "stylesheet" href = "index.css">
+<!--glyphicon cdn-->
+<link rel = "stylesheet" href = "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <title>cryptocurrency</title>
+  
+</head>
+<body>
+      <nav role="navigation" class="navbar navbar-default"> 
+        <div class="navbar-header navigation">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">        </span>
+            <span class="icon-bar">        </span>
+            <span class="icon-bar">        </span>
+          </button>
+          <h3 id = "small" class="bitcoin-logo"><span class="fa fa-bitcoin"></span><span class="logo-white">Krypto</span>Analyze</h3>
+        </div>
+        <div id="navbarCollapse" class="collapse navbar-collapse navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><h4>Coins</h4></a></li>
+            <li><a href="#"><h4>Exchanges</h4></a></li>
+            <li><a href="#"><h4>Wallets</h4></a></li>
+            <!--<li><a href="#"><h4>News</h4></a></li>
+            <li><a href="#"><h4>Portfolio</h4></a></li>-->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+<!--<div class="container">
+  <div class="row">
+    <div class="col-xs-9">
+        <input type="text" id="searchbox" placeholder="Type to search">
+    </div>
+    <div class="col-xs-3">
+      <button type="button"><span class="glyphicon glyphicon-search"></span>Type to Search</button>
+    </div>
+  </div>
+</div>-->
+<div class="wrapper">
+  <input placeholder="Type to search" id="wrapper-input"/>
+  <button id="wrapper-btn"><span class="glyphicon glyphicon-search"></span> Search</button>
+</div>
+      
+<!--HEAD-->
+<!--<img id = "bck" src="pix1.jpg">-->
+<!--<div class = "container-fluid">
+  <div class = "row head">
+    <div class = "col-sm-5 col-md-4 col-lg-4 head-logo">
+      <h3 id = "small" class="bitcoin-logo"><span class="fa fa-bitcoin"></span>Kryptoanalyse</h3>
+    </div>
+    <div class = "col-xs-10 col-sm-5 col-md-6 col-lg-6 textbox head-search">
+      <input type = "text" class="search-box"><button type = "button" class="search"><span class="glyphicon glyphicon-search"></span> Search</button>
+    </div>
+    <div class = "col-xs-2 col-sm-2 col-md-2 col-lg-2 head-login">
+      <h5>Login</h5>
+    </div>
+
+  </div>
+</div>-->
+
+<br>
+<br>
+<br>
+<!--carousel-->
+<div id = "slides" class = "carousel slide" data-ride="carousel">
+  <ul class = "carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class = "active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+  </ul>
+  <div class = "carousel-inner sliding">
+    <div class = "item active">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-sm-6">
+            <div class = "panel panel-primary">
+              <div class = "panel-heading">
+              <h5>Bitcoin</h5>
+              </div>
+              <div class = "panel-body panel-price">
+                <h5 class="priceusd-head"><b>BTC-USD:<span id ="btcusd2" ></span></b></h5>
+                
+                <h5 class="pricebtc-head"><b>BTC-BTC: <span id="btcbtc"></span></b></h5>
+                
+                <h5 class ="marketcap"><b>AVAILABLE SUPPLY: <span id="btcvol2"></span></b></h5>
+              </div>
+              <div class = "panel-footer">
+                <button type="button" class="panel-button">Buy/Sell</button>
+                <h6>Rank: 1</h6>
+              </div>
+            </div>
+          </div>
+          <div class = "col-sm-6">
+              <div class = "panel panel-primary panel2">
+                  <div class = "panel-heading">
+                  <h5>ETH</h5>
+                  </div>
+                  <div class = "panel-body panel-price">
+                    <h5 class="priceusd-head"><b>ETH-USD: <span id="ethusd2"></span></b></h5>
+                    
+                    <h5 class="pricebtc-head"><b>ETH-BTC: <span id ="ethbtc"></span></b></h5>
+                    
+                    <h5 class ="marketcap"><b>AVAILABLESUPPLY: <span id="ethvol2"></span></b></h5>
+                  </div>
+                  <div class = "panel-footer">
+                    <button type="button" class="panel-button">Buy/Sell</button>
+                    <h6>Rank: 3</h6>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!--<div class = "carousel-caption">
+        <h5>asdfg</h5>
+      </div>-->
+    </div>
+
+
+    <div class = "item">
+
+        <div class = "container">
+            <div class = "row">
+              <div class = "col-sm-6">
+                <div class = "panel panel-primary">
+                  <div class = "panel-heading">
+                  <h5>Litecoin</h5>
+                  </div>
+                  <div class = "panel-body panel-price">
+                    <h5 class="priceusd-head"><b>LTC-USD: <span id="ltcusd2"></span></b></h5>
+                    
+                    <h5 class="pricebtc-head"><b>LTC-BTC: <span id="ltcbtc"></span></b></h5>
+                    
+                    <h5 class ="marketcap"><b>AVAILABLE SUPPLY: <span id="ltcvol2"></span></b></h5>
+                  </div>
+                  <div class = "panel-footer">
+                    <button type="button" class="panel-button">Buy/Sell</button>
+                    <h6>Rank: 4</h6>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-sm-6">
+                  <div class = "panel panel-primary panel2">
+                      <div class = "panel-heading">
+                      <h5>Tether</h5>
+                      </div>
+                      <div class = "panel-body panel-price">
+                        <h5 class="priceusd-head"><b>USDT-USD: <span id="usdtusd2"></span></b></h5>
+                        
+                        <h5 class="pricebtc-head"><b>USDT-BTC: <span id="usdtbtc"></span></b></h5>
+                        
+                        <h5 class ="marketcap"><b>AVAILABLE SUPPLY: <span id="usdtvol2"></span></b></h5>
+                      </div>
+                      <div class = "panel-footer">
+                        <button type="button" class="panel-button">Buy/Sell</button>
+                        <h6>Rank: 7</h6>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class = "item">
+      
+        <div class = "container">
+            <div class = "row">
+              <div class = "col-sm-6">
+                <div class = "panel panel-primary">
+                  <div class = "panel-heading">
+                  <h5>Stellar</h5>
+                  </div>
+                  <div class = "panel-body panel-price">
+                    <h5 class="priceusd-head"><b>XLM-USD: <span id="xlmusd2"></span></b></h5>
+                    
+                    <h5 class="pricebtc-head"><b>XLM-BTC: <span id="xlmbtc"></span></b></h5>
+                    
+                    <h5 class ="marketcap"><b>AVAILABLE SUPPLY: <span id="xlmvol2"></span></b></h5>
+                  </div>
+                  <div class = "panel-footer">
+                    <button type="button" class="panel-button">Buy/Sell</button>
+                    <h6>Rank: 9</h6>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-sm-6">
+                  <div class = "panel panel-primary panel2">
+                      <div class = "panel-heading">
+                      <h5>Binance Coin</h5>
+                      </div>
+                      <div class = "panel-body panel-price">
+                        <h5 class="priceusd-head"><b>BNB-USD: <span id="bnbusd2"></span></b></h5>
+                        
+                        <h5 class="pricebtc-head"><b>BNB-BTC: <span id="bnbbtc"></span></b></h5>
+                        
+                        <h5 class ="marketcap"><b>AVAILABLE SUPPLY: <span id="bnbvol2"></span></b></h5>
+                      </div>
+                      <div class = "panel-footer">
+                        <button type="button" class="panel-button">Buy/Sell</button>
+                        <h6>Rank: 10</h6>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!--<div class="container navbar">
+  <div class="row">
+    <ul class="na na-pills ulnav">
+      <div class="col-xs-3">
+        <li class="active" id="nav1"><a href="#"><h3>Coins</h3></a></li>
+      </div>
+      <div class="col-xs-3">
+        <li id ="nav2"><a href="#"><h3>Forum</h3></a></li>
+      </div>
+      <div class="col-xs-3">
+        <li id = "nav3"><a href="#"><h3>News</h3></a></li>
+      </div>
+    </ul>
+    </div>
+  </div>-->
+<!--</div>-->
+<!--Table-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="co-xs-offset-3 col-xs-12">
+      <ul class="nav nav-tabs body-nav">
+        <li class="active li1"><a href="#"><h4>COINS</h4></a></li>
+        <li class="li2"><a href="#"><h4>NEWS</h4></a></li>
+        <li class="li3"><a href="#"><h4>FORUMS</h4></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class = "container-fluid">
+<table class="table table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Coin</th>
+      <th>Price($)</th>
+      <th>Total Vol.</th>
+      <th>Chg.(24H)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="well">
+      <td><b>1</b></td>
+      <td>Bitcoin</td>
+      <td id="btcusd"><span id="btc-usd2"></span></td>
+      <td><span id="btcvol"></span></td>
+      <td><span id="btcchg"></span></td>
+    </tr>
+    <tr>
+        <td><b>2</b></td>
+        <td>XRP</td>
+        <td><span id="xrpusd"></span></td>
+        <td><span id="xrpvol"></span></td>
+        <td><span id="xrpchg"></span></td>
+      </tr>
+      <tr class="well">
+        <td><b>3</b></td>
+        <td>Etherum</td>
+        <td><span id="ethusd"></span></td>
+        <td><span id="ethvol"></span></td>
+        <td><span id="ethchg"></span></td>
+      </tr>
+      <tr>
+        <td><b>4</b></td>
+        <td>Litecoin</td>
+        <td><span id="ltcusd"></span></td>
+        <td><span id="ltcvol"></span></td>
+        <td><span id="ltcchg"></span></td>
+      </tr>
+      <tr class="well">
+        <td><b>5</b></td>
+        <td>EOS</td>
+        <td><span id="eosusd"></span></td>
+        <td><span id="eosvol"></span></td>
+        <td><span id="eoschg"></span></td>
+      </tr>
+      <tr>
+        <td><b>6</b></td>
+        <td>Bitcoin Cash</td>
+        <td><span id="bchusd"></span></td>
+        <td><span id="bchvol"></span></td>
+        <td><span id="bchchg"></span></td>
+      </tr>
+      <tr class="well">
+        <td><b>7</b></td>
+        <td>Tether</td>
+        <td><span id="usdtusd"></span></td>
+        <td><span id="usdtvol"></span></td>
+        <td><span id="usdtchg"></span></td>
+      </tr>
+      <tr>
+        <td><b>8</b></td>
+        <td>TRON</td>
+        <td><span id="trxusd"></span></td>
+        <td><span id="trxvol"></span></td>
+        <td><span id="trxchg"></span></td>
+      </tr>
+      <tr class="well">
+        <td><b>9</b></td>
+        <td>Stellar</td>
+        <td><span id="xlmusd"></span></td>
+        <td><span id="xlmvol"></span></td>
+        <td><span id="xlmchg"></span></td>
+      </tr>
+      <tr>
+        <td><b>10</b></td>
+        <td>Binance Coin</td>
+        <td><span id="bnbusd"></span></td>
+        <td><span id="bnbvol"></span></td>
+        <td><span id="bnbchg"></span></td>
+      </tr>
+      <tr class="well">
+        <td><b>11</b></td>
+        <td>Bitcoin SV</td>
+        <td><span id="bsvusd"></span></td>
+        <td><span id="bsvvol"></span></td>
+        <td><span id="bsvchg"></span></td>
+      </tr>
+      <tr>
+          <td><b>12</b></td>
+          <td>Caradano</td>
+          <td><span id="adausd"></span></td>
+          <td><span id="adavol"></span></td>
+          <td><span id="adachg"></span></td>
+        </tr>
+        <tr class="well">
+          <td><b>13</b></td>
+          <td>Monero</td>
+          <td><span id="xmrusd"></span></td>
+          <td><span id="xmrvol"></span></td>
+          <td><span id="xmrchg"></span></td>
+        </tr>
+        <tr>
+          <td><b>14</b></td>
+          <td>IOTA</td>
+          <td><span id="miotausd"></span></td>
+          <td><span id="miotavol"></span></td>
+          <td><span id="miotachg"></span></td>
+          </tr>
+        <tr class="well">
+          <td><b>15</b></td>
+          <td>Dash</td>
+          <td><span id="dashusd"></span></td>
+          <td><span id="dashvol"></span></td>
+          <td><span id="dashchg"></span></td>
+        </tr>
+      
+  </tbody>  
+</table>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-offset-1 col-xs-10 bottom-note">
+      <h4>KryptoAnalyze is the perfect place to learn about crypto currencies and start to understand some of the fundamental concepts behind the blockchain.</h4>
+    </div>
+  </div>
+</div>
+
+
+<div class="container images">
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-5 news-body">
+      <img id="img1" src="./pictures/bitcoin.png">
+      
+    </div>
+    <div class="col-sm-offset-1 col-sm-5 news-body">
+        <img id ="img2" src="./pictures/finance.png">
+    </div>
+  </div>
+  <!--<div class="row">
+    <div class="col-md-5 news-body">
+        <img id="img3" src="./pictures/finance.png">
+    </div>
+    <div class="col-md-offset-1 col-md-5 news-body">
+        <img id="img4" src="./pictures/finance2.png">
+    </div>
+  </div>-->
+</div>
+
+
+<div class="container-fluid footer">
+  <div class = "row">
+    <div class = "col-xs-6">
+      <div class = "foot-head">
+        <h4 class="footer-head">Our company</h4>
+      </div>
+      <div class = "content">
+        <h5>About Us</h5>
+        <h5>Privacy Policy</h5>
+        <h5>Terms & Conditions</h5>
+      </div>
+    </div>
+    <div class = "col-xs-6">
+      <div class = "foot-head">
+        <h4 class="footer-head">Get in touch</h4>
+      </div>
+      <div class = "content">
+        <h5>Contact us</h5>
+        <h5>FAQs</h5>
+      </div>
+    </div>
+  </div>
+  <div class = "social-media">
+    <a href="#" class="fa fa-facebook fa-2x"></a>
+    <a href="#" class="fa fa-twitter fa-2x"></a>
+    <a href="#" class="fa fa-instagram fa-2x"></a>
+    <a href="#" class="fa fa-google-plus fa-2x"></a>
+  </div>
+  <br>
+  <p class = "footnote">&copy 2019 Kryptoanalyse Ltd</p>
+</div>
+<!--<h2 id = "width"></h2>-->
+<script src = "index.js"></script>
+</body>
+
+<!--<h2>Mining Sky</h2>
+      <p>Since the inception of bitcoin back in 2009, many changes have taken place in the cryptocurrency mining landscape. Mining hardware has evolved drastically, accompanied by exponential increases in mining difficulty. You could say that cryptocurrency m…
+        <a href="#">
+            Read all about Mining Sky - How to buy a Mining Contract</a>
+      </p>
+      <h2>E-sports Betting</h2>
+      <p>Esports betting is not much different from betting on any other sport or event. After registering on a website, you’ll need to deposit the appropriate amount of money in your virtual wallet and then select the match and make a bet.
+
+          <a href="#">Read all about How To Earn Money With E-Sports Betting?</a></p>
+          <h2>How To Buy Bitcoin With Lumo</h2>
+      <p>It’s never too late to get started with crypto. Especially if you decide to use Luno, a well-established wallet that has been around since 2013. Based on the United Kingdom, Luno is a secure exchange and wallet that allows users to buy, send, and sto…
+
+          <a href="#">Read all about How to Buy Bitcoin With Luno</a></p>
+          <h2>Everything You Need To Know About Ripple</h2>
+      <p>Ripple is an electronic payment system network which initially started life in 2004 as RipplePay. RipplePay was an innovative system whose goal was to provide secure and instantaneous financial transactions across the globe, with trivial expense. In …
+
+          <a href="#">Read all about Everything You Need to Know About Ripple and XRP</a></p>-->
